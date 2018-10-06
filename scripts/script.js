@@ -1,4 +1,4 @@
-function debounce(func, wait = 20, immediate = true) {
+function debounce(func, wait = 8, immediate = true) {
     var timeout;
     return function() {
       var context = this, args = arguments;
@@ -20,8 +20,7 @@ function checkSlide(e) {
   sliderImages.forEach(image => {
 
     // Half way through the image
-    const slideInAt = (window.scrollY + window.innerHeight);
-    image.height / 2;
+    const slideInAt = (window.scrollY + window.innerHeight) - image.height / 4;
 
     // Bottom of the image
     const imageBottom = image.offsetTop + image.height;
