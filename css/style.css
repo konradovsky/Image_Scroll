@@ -118,10 +118,29 @@ html {
   .white {
     background: white;
   }
-  .two > img {
+  .witcher{
     height: 60vh;
-    position: absolute;
+    position: relative;
+    display: block;
+  }
+  .two > img {
+    height: 500px;
+    /* position: absolute; */
     top: 0;
     left: 0;
     z-index: 999;
+  }
+  .witcher-holder{
+    position: relative;
+    height: 60vh;
+    background: white;
+
+  }
+  @keyframes startup {
+    from {
+
+    }
+    to {
+      
+    } 
   }
